@@ -1,5 +1,5 @@
-title: Your Blog
-baseurl: "/my-blog"
+title: My Blog
+baseurl: "/blogs"
 collections:
   categories:
     output: true
