@@ -1,0 +1,7 @@
+title: Your Blog
+baseurl: "/my-blog"
+collections:
+  categories:
+    output: true
+    permalink: /category/:name/
+    
