@@ -1,5 +1,5 @@
 title: My Blog
-baseurl: ""
+# baseurl: ""
 plugins:
   - jekyll-feed
 markdown: kramdown
