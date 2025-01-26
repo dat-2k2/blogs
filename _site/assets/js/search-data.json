@@ -1,0 +1,79 @@
+{"0": {
+    "doc": "Chapter 1. Reliable, Scalable, and Maintainable Applications",
+    "title": "Chapter 1. Reliable, Scalable, and Maintainable Applications",
+    "content": "3 components of DIA: . | Reliability: The system should continue to work correctly (performing the correct function at the desired level of performance) even in the face of adversity (hardware or software faults, and even human error) . | Tolerating hardware and software faults. | Human error. | . | Scalability: As the system grows (in data volume, traffic volume, or complexity), there should be reasonable ways of dealing with that growth. | Measuring load and performance. | Latency,percentiles, throughput. | . | Maintainability: Over time, many different people will work on the system (engineering and operations, both maintaining current behavior and adapting the system to new use cases), and they should all be able to work on it productively. | Operability | Simplicity | Evolvability | . | . Several main functionalities: . | Store data so that they, or another application, can find it again later (databases) | Remember the result of an expensive operation, to speed up reads (caches) | Allow users to search data by keyword or filter it in various ways (search indexes) | Send a message to another process, to be handled asynchronously (stream processing) | Periodically crunch a large amount of accumulated data (batch processing) | . ",
+    "url": "/Designing%20Data-Intensive%20Applications/Chapter%201.%20Reliable,%20Scalable,%20%20and%20Maintainable%20Applications.html",
+    
+    "relUrl": "/Designing%20Data-Intensive%20Applications/Chapter%201.%20Reliable,%20Scalable,%20%20and%20Maintainable%20Applications.html"
+  },"1": {
+    "doc": "Chapter 1. Reliable, Scalable, and Maintainable Applications",
+    "title": "Reliability",
+    "content": "Also can be called fault-tolerant/resilient. Fault is not same as failure. A fault is usually defined as one component of the system deviating from its spec, whereas a failure is when a system as a whole stops providing the required service to the user. It is impossible to make possibility of fault zero. Therefore, it is usually best to design fault-tolerance mechanisms that prevent faults from causing failure. Hardware Faults . | Mean time to failure (MTTF) of hard disk is 10 - 50y. | Add redundancy to the individual hardware components in a system. | However there’s a move towar systems that can tolerate the loss of entire machines, e.g. several nodes in a cluster. | This requires software technique in preference of in addition to hardware redundancy. | . | . Software errors . Human errors . | Design systems in a way that minimizes opportunities for error. | Decouple the places where people make the most mistakes from the places where they can cause failures. | Test thoroughly at all levels, from unit tests to whole-system integration tests and manual tests. | Allow quick and easy recovery from human errors, to minimize the impact in the case of a failure. | Set up detailed and clear monitoring, such as performance metrics and error rates. | Implement good management practices and training. | . ",
+    "url": "/Designing%20Data-Intensive%20Applications/Chapter%201.%20Reliable,%20Scalable,%20%20and%20Maintainable%20Applications.html#reliability",
+    
+    "relUrl": "/Designing%20Data-Intensive%20Applications/Chapter%201.%20Reliable,%20Scalable,%20%20and%20Maintainable%20Applications.html#reliability"
+  },"2": {
+    "doc": "About",
+    "title": "About",
+    "content": "This is a tech blog focusing on programming and technology discussions. ",
+    "url": "/about.html",
+    
+    "relUrl": "/about.html"
+  },"3": {
+    "doc": "Home",
+    "title": "Latest Posts",
+    "content": " ",
+    "url": "/#latest-posts",
+    
+    "relUrl": "/#latest-posts"
+  },"4": {
+    "doc": "Home",
+    "title": "Home",
+    "content": " ",
+    "url": "/",
+    
+    "relUrl": "/"
+  },"5": {
+    "doc": "Slurm Cluster configuration",
+    "title": "Build a Slurm Cluster on Virtual Box",
+    "content": " ",
+    "url": "/devops/slurm-cluster.html#build-a-slurm-cluster-on-virtual-box",
+    
+    "relUrl": "/devops/slurm-cluster.html#build-a-slurm-cluster-on-virtual-box"
+  },"6": {
+    "doc": "Slurm Cluster configuration",
+    "title": "Prequisitions",
+    "content": ". | Create a virtual machine on Virtual Box. | What is a NAT network? | Create and configure NAT network on Virtual Box. | . ",
+    "url": "/devops/slurm-cluster.html#prequisitions",
+    
+    "relUrl": "/devops/slurm-cluster.html#prequisitions"
+  },"7": {
+    "doc": "Slurm Cluster configuration",
+    "title": "Hardware properties",
+    "content": "Host: . | Windows 11 | Oracle VirtualBox 7.1.4 Nodes: | Ubuntu Server 22.04 | . ",
+    "url": "/devops/slurm-cluster.html#hardware-properties",
+    
+    "relUrl": "/devops/slurm-cluster.html#hardware-properties"
+  },"8": {
+    "doc": "Slurm Cluster configuration",
+    "title": "Goals",
+    "content": "We need to create and configure a cluster with 3 nodes, managed by Slurm Workload Manager. In a cluster, we want to establish not only connection between nodes but also connection from outside. ",
+    "url": "/devops/slurm-cluster.html#goals",
+    
+    "relUrl": "/devops/slurm-cluster.html#goals"
+  },"9": {
+    "doc": "Slurm Cluster configuration",
+    "title": "Create VM machine",
+    "content": " ",
+    "url": "/devops/slurm-cluster.html#create-vm-machine",
+    
+    "relUrl": "/devops/slurm-cluster.html#create-vm-machine"
+  },"10": {
+    "doc": "Slurm Cluster configuration",
+    "title": "Slurm Cluster configuration",
+    "content": " ",
+    "url": "/devops/slurm-cluster.html",
+    
+    "relUrl": "/devops/slurm-cluster.html"
+  }
+}

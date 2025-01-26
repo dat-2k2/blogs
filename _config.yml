@@ -1,7 +1,17 @@
 title: My Blog
-baseurl: "/blogs"
-collections:
-  categories:
-    output: true
-    permalink: /category/:name/
+baseurl: ""
+plugins:
+  - jekyll-feed
+markdown: kramdown
+theme: just-the-docs
+
+# Theme settings
+color_scheme: light # or light
+search_enabled: true
+nav_expand_all: true
+
+
+aux_links:
+  "Repository on GitHub":
+    - "//github.com/dat-2k2"
     
